@@ -1,0 +1,29 @@
+Social security numbers, yes
+Credit card numbers (13-19 digits), yes
+Bank account numbers, no
+IBAN account numbers, yes
+Investment account numbers, no
+Email addresses, yes
+Phone numbers, yes
+Street addresses, no
+Date of birth, no
+Driver's license numbers, Yes
+State ID card numbers
+Passport numbers, yes
+Maiden names, no
+Health care number/member IDs, no
+License plate numbers, no
+Vehicle identification numbers (VIN), no
+Social media accounts, no
+IP addresses (IPv4 and IPv6), yes
+MAC addresses, no
+Cryptocurrency addresses, yes(bitcoin)
+Medical records, no
+Health care/insurance, no
+Student records, no
+HR records, no
+Legal numbers, no
+URLs, yes
+General accounts numbers, no
+Policy numbers, no
+Insurance Policy numbers, no
