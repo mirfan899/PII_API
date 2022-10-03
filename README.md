@@ -14,11 +14,11 @@ PERSON
 PHONE_NUMBER
 MEDICAL_LICENSE
 URL
+US_BANK_NUMBER
 ```
 
 Following entities will be added.
 ```text
-Bank account numbers
 Investment account numbers
 Street addresses
 Date of birth
@@ -44,4 +44,10 @@ Insurance Policy numbers
 
 ```text
 https://regexlib.com/UserPatterns.aspx?authorid=294cee08-6163-49c8-9534-922f149a2a16
+```
+
+Medical regexes.
+```python
+regex: "\\d{3}(-)\\d{2}(-)\\d{4}(A|B[1-7]?|M|T|C[1-4]|D)"
+regex: "[0-9]{3}(-)[0-9]{2}(-)[0-9]{4}(A|B[1-7]?|M|T|C[1-4]|D)"
 ```

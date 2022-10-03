@@ -1,13 +1,13 @@
 recognizers:
   -
     name: "Medical ID recognizer"
-    supported_language: "en"
     patterns:
       -
         name: "Medical ID"
-        regex: r"\b\d{3}(-)\d{2}(-)\d{4}(A|B[1-7]?|M|T|C[1-4]|D)\b"
+        regex: '\b\d{3}(-)\d{2}(-)\d{4}(A|B[1-7]?|M|T|C[1-4]|D)\b'
         score: 0.5
     context:
       - medical
       - id
     supported_entity: "MEDICAL_ID"
+    supported_language: "en"
