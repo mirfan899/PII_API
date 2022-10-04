@@ -12,10 +12,10 @@ class LoadedSpacyNlpEngine(SpacyNlpEngine):
 
 
 # Load a model a-priori
-nlp = spacy.load("en_core_web_lg")
+nlp = spacy.load("en_core_web_md")
 
 # Pass the loaded model to the new LoadedSpacyNlpEngine
-loaded_nlp_engine = LoadedSpacyNlpEngine(loaded_spacy_model = nlp)
+loaded_nlp_engine = LoadedSpacyNlpEngine(loaded_spacy_model=nlp)
 yaml_file = "my_recognizers/medical_id.yaml"
 registry = RecognizerRegistry()
 registry.add_recognizers_from_yaml(yaml_file)

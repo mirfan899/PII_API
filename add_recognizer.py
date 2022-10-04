@@ -7,6 +7,7 @@ spacy_recognizer = SpacyRecognizer(supported_language="en")
 
 yaml_file = "my_recognizers/medical_id.yaml"
 registry = RecognizerRegistry()
+registry.load_predefined_recognizers()
 registry.add_recognizers_from_yaml(yaml_file)
 analyzer = AnalyzerEngine(registry=registry)
 analyzer.registry.add_recognizer(spacy_recognizer)
