@@ -12,6 +12,10 @@ registry.add_recognizers_from_yaml(yaml_file)
 analyzer = AnalyzerEngine(registry=registry)
 analyzer.registry.add_recognizer(spacy_recognizer)
 
-result = analyzer.analyze(text="This is New York and my medical id is 315-77-8771A 002-51-3788B2", language="en")
-print(result)
+text = "This is New York and my medical id is 315-77-8771A 002-51-3788B2, 03468871351"
+result = analyzer.analyze(text=text, language="en")
+
+for r in result:
+    if r.score >= 0.4:
+        print(text[r.start:r.end], r.entity_type)
 print(analyzer.get_supported_entities())
