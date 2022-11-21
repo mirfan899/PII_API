@@ -1,7 +1,6 @@
 from copy import deepcopy
 
 from presidio_analyzer import AnalyzerEngine
-import validators
 # Set up the engine, loads the NLP module (spaCy model by default) and other PII recognizers
 analyzer = AnalyzerEngine()
 
